@@ -1,4 +1,15 @@
 /*Form Section */
+#root {
+  font-family: futura, sans-serif;
+  background-image: radial-gradient(
+    circle,
+    #fafafa,
+    #faf9fa,
+    #fbf8f7,
+    #fbf7f4,
+    #f7f7f2
+  );
+}
 .form-container {
   height: 100vh;
   display: flex;

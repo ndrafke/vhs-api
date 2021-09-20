@@ -13,7 +13,7 @@ const Posts = ({setCurrentId}) => {
     return(
         !posts.length ? <CircularProgress /> : (
             <div>
-            <h2 style={{textAlign: "center"}}>Entries</h2>
+            <h2 style={{textAlign: "center"}}>ENTRIES</h2>
         <Container className="post-box">
             {posts.map((post) => (
                 <div key={post._id}>

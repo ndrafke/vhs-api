@@ -90,7 +90,7 @@ const clear = () => {
     <div className="container">
       <div className="d-flex justify-content-center">
         <img src="https://i.imgur.com/cXjZtki.jpg" alt="vhs-logo" id="vhs-logo"></img>
-        <h4 style={{textAlign: 'center'}}>{currentId ? 'Edit' : 'Submit'} a VHS release</h4>
+        <h4 style={{textAlign: 'center'}}>{currentId ? 'EDIT' : 'SUBMIT'} A VHS RELEASE</h4>
         <img src="https://i.imgur.com/cXjZtki.jpg" alt="vhs-logo" id="vhs-logo"></img>
         </div>
       
