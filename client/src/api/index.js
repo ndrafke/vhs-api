@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'https://vhs-collection.herokuapp.com/posts';
+const url = 'https://vhs-api.herokuapp.com/posts';
 
 // API calls to database 
 export const fetchPosts = () => axios.get(url);
