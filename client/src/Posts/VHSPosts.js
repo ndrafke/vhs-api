@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'react-bootstrap';
+import Table from 'react-bootstrap/Table'
 import { CircularProgress } from '@material-ui/core';
 import {useSelector} from 'react-redux';
 import Post from './Post/Post';
@@ -15,10 +16,10 @@ const Posts = ({setCurrentId}) => {
             <div>
             <h2 style={{textAlign: "center"}}>ENTRIES</h2>
         <Container className="post-box">
+            
             {posts.map((post) => (
                 <div key={post._id}>
                     <Post post={post} setCurrentId={setCurrentId}/>
-                    <hr/>
                 </div>
             ))}
             

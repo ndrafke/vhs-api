@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'react-bootstrap';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
+import Table from 'react-bootstrap/Table'
 import {useDispatch} from 'react-redux';
 import {deletePost} from '../../actions/posts';
 
@@ -22,27 +23,35 @@ const Post = ({post, setCurrentId}) => {
 
     return(
     <Container>
-        <div className = "container">
-        <div className="row">
-        <div className="col-sm-10 d-flex flex-row align-items-center">
-        <p>{post.title}({post.movieYear})</p>
-        </div>
-        <div className="col-sm-2 d-flex align-items-center">
-      <DropdownButton size="sm" variant="outline-secondary" id="dropdown-basic-button" title="" className="post-button">
-        <Dropdown.Item size="sm" >Movie Release Year:{post.movieYear}</Dropdown.Item>
-        <Dropdown.Item size="sm" >VHS Release:{post.vhsYear}</Dropdown.Item> 
-        <Dropdown.Item size="sm" >VHS Company:{post.vhsCompany}</Dropdown.Item>
-        <Dropdown.Item size="sm" >Genre:{post.genre}</Dropdown.Item>
-        <Dropdown.Item size="sm" >VHS ID Code:{post.vhsId}</Dropdown.Item>
-        <Dropdown.Item size="sm" >Clamshell Case?:{post.clamShell}</Dropdown.Item> 
+        <Table responsive striped bordered hover>
+        <thead>
+    <tr>
+      <th>Title</th>
+      <th>Movie Release Year</th>
+      <th>VHS release Year</th>
+      <th>VHS Company</th>
+      <th>Genre</th>
+      <th>VHS Catalog ID</th>
+      <th>Clamshell Case?</th>
+      <th></th>
+    </tr>
+  </thead> 
+         <tbody>
+    <tr>
+      <td>{post.title}</td>
+      <td>{post.movieYear}</td>
+      <td>{post.vhsYear}</td>
+      <td>{post.vhsCompany}</td>
+      <td>{post.genre}</td>
+      <td>{post.vhsId}</td>
+      <td>{post.clamShell}</td>
+      <td><DropdownButton size="sm" variant="outline-secondary" id="dropdown-basic-button" title="" drop="up" className="post-button">
         <Dropdown.Item size="sm" href="#form" onClick={editEntry}>Edit</Dropdown.Item>
         <Dropdown.Item size="sm" href="#form" onClick={deleteEntry}>Delete</Dropdown.Item>
-        </DropdownButton>
-        </div>
-        </div>
-  </div> 
-     
-      
+        </DropdownButton></td>
+    </tr>
+         </tbody>
+        </Table>
      </Container>
     )
 
