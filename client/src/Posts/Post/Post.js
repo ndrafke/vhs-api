@@ -45,7 +45,7 @@ const Post = ({post, setCurrentId}) => {
       <td>{post.genre}</td>
       <td>{post.vhsId}</td>
       <td>{post.clamShell}</td>
-      <td><DropdownButton size="sm" variant="outline-secondary" id="dropdown-basic-button" title="" drop="up" className="post-button">
+      <td><DropdownButton size="sm" variant="outline-secondary" id="dropdown-basic-button" title="" drop="left" className="post-button">
         <Dropdown.Item size="sm" href="#form" onClick={editEntry}>Edit</Dropdown.Item>
         <Dropdown.Item size="sm" href="#form" onClick={deleteEntry}>Delete</Dropdown.Item>
         </DropdownButton></td>
