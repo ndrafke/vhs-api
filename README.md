@@ -8,4 +8,7 @@ Under ongoing construction.
 
 [Front end Deployed via Netlify!](https://vhs-api.netlify.app/)
 
+
+[Server side deployed on Heroku!](https://vhs-api.herokuapp.com/posts)
+
 ![screenshot of form](https://i.imgur.com/IVgtlAE.png)
