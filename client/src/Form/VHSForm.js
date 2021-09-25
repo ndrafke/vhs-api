@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
     clear();
   }
 }
-// To clear form data fields:
+// To clear form input fields for button or upon successful submit:
 const clear = () => {
   setCurrentId(0);
   setValues({ title: '', movieYear: '', vhsYear: '', vhsCompany: '', genre: '', vhsId: '', clamShell: '' });

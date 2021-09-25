@@ -44,8 +44,8 @@
 }
 /*Button on individual post: */
 .post-button {
-  background-color: white;
-  border: 0px transparent;
+  background-color: transparent;
+  border: 0px white;
   font-size: 0.9rem;
 }
 .nav-color {
