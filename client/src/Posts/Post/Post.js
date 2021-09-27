@@ -20,7 +20,7 @@ const Post = ({post, setCurrentId}) => {
         dispatch(deletePost(post._id))
     }
 
-
+    //exports data in table row
     return(    
     <tr>
       <td>{post.title}</td>

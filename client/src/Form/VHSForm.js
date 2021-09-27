@@ -18,6 +18,7 @@ const [values, setValues] = useState({
   vhsId: "",
   clamShell: ""
 });
+// Form validation
 const [errors, setErrors] = useState({});
 const [validated, setValidated] = useState(false);
 

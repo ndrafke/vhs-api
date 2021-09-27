@@ -11,7 +11,7 @@ export const getPosts = () => async (dispatch) => {
       dispatch({type: FETCH_ALL, payload: data})
     }
     catch(error){
-        console.log(error.message)
+        console.log(error)
     }
   }
   // to create a new post:
