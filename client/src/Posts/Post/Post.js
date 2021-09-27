@@ -21,22 +21,7 @@ const Post = ({post, setCurrentId}) => {
     }
 
 
-    return(
-    <Container>
-        <Table responsive striped bordered hover>
-        <thead>
-    <tr>
-      <th>Title</th>
-      <th>Movie Release Year</th>
-      <th>VHS release Year</th>
-      <th>VHS Company</th>
-      <th>Genre</th>
-      <th>VHS Catalog ID</th>
-      <th>Clamshell Case?</th>
-      <th></th>
-    </tr>
-  </thead> 
-         <tbody>
+    return(    
     <tr>
       <td>{post.title}</td>
       <td>{post.movieYear}</td>
@@ -49,11 +34,7 @@ const Post = ({post, setCurrentId}) => {
         <Dropdown.Item size="sm" href="#form" onClick={editEntry}>Edit</Dropdown.Item>
         <Dropdown.Item size="sm" href="#form" onClick={deleteEntry}>Delete</Dropdown.Item>
         </DropdownButton></td>
-    </tr>
-         </tbody>
-        </Table>
-     </Container>
+    </tr> 
     )
-
     }
 export default Post;

@@ -16,13 +16,28 @@ const Posts = ({setCurrentId}) => {
             <div>
             <h2 style={{textAlign: "center"}}>ENTRIES</h2>
         <Container className="post-box">
-            
+        <Table responsive striped bordered hover>
+        <thead>
+              <tr>
+                <th>Title</th>
+                <th>Movie Release Year</th>
+                <th>VHS release Year</th>
+                <th>VHS Company</th>
+                <th>Genre</th>
+                <th>VHS Catalog ID</th>
+                <th>Clamshell Case?</th>
+                <th></th>
+              </tr>
+            </thead> 
             {posts.map((post) => (
-                <div key={post._id}>
+                  
+                  
+                <tbody key={post._id}>
                     <Post post={post} setCurrentId={setCurrentId}/>
-                </div>
+                </tbody>
+                
             ))}
-            
+          </Table> 
         </Container>
         </div>
         )
