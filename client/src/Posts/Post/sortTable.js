@@ -1,13 +1,13 @@
-import React, {useState, useMemo} from 'react';
-import {useSelector} from 'react-redux';
-const sortTable = (config = null) => {
-    const posts = useSelector((state) => state.posts);
+import {useState, useMemo} from 'react';
+
+const sortTable = (data, config = null) => {
+    
     const [sortConfig, setSortConfig] = useState(config);
 
     
-    
+    //useMemo hook to initialize sorting of each table column:
     const sortedData = useMemo(() => {
-    let sortableData = [...posts];
+    let sortableData = [...data];
     if (sortConfig !== null){
     sortableData.sort((a, b) => {
         if (a[sortConfig.key] < b[sortConfig.key]) {
@@ -20,18 +20,19 @@ const sortTable = (config = null) => {
       });
     }
       return sortableData
-    }, [posts, sortConfig])
-     
+    }, [data, sortConfig])
+    
+    //Function for onClick action for each table column:
     const requestSort = (key) => {
         let direction = 'ascending';
         if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
           direction = 'descending';
         }
         setSortConfig({ key, direction });
-        console.log(posts)
+        console.log(data)
       }
      
-    return { posts: sortedData, requestSort, sortConfig}
+    return { data: sortedData, requestSort, sortConfig}
 
 }
 export default sortTable;
