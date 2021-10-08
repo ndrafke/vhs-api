@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container} from 'react-bootstrap';
 import { CircularProgress } from '@material-ui/core';
 import {useSelector} from 'react-redux';
-import Table from 'react-bootstrap/Table'
+import Table from 'react-bootstrap/Table';
+import Button from 'react-bootstrap/Button';
 import Post from './Post/Post';
 import sortTable from './Post/sortTable';
 // map of all current posts to render table in 'entries' section:
@@ -28,16 +29,30 @@ const Posts = ({setCurrentId}) => {
             <div>
             <h2 style={{textAlign: "center"}}>ENTRIES</h2>
         <Container className="post-box">
-        <Table responsive striped bordered hover>
+        <Table responsive striped bordered hover style={{fontSize: "0.9rem"}}>
         <thead>
               <tr>
-              <th><button type="button" onClick={() => requestSort('title')} className={getName('title')}>Title</button></th>
-                <th><button type="button" onClick={() => requestSort('movieYear')} className={getName('movieYear')}>Movie Release Year</button></th>
-                <th><button type="button" onClick={() => requestSort('vhsYear')} className={getName('vhsYear')}>VHS release Year</button></th>
-                <th><button type="button" onClick={() => requestSort('vhsCompany')} className={getName('vhsCompany')}>VHS Company</button></th>
-                <th><button type="button" onClick={() => requestSort('genre')} className={getName('genre')}>Genre</button></th>
-                <th><button type="button" onClick={() => requestSort('vhsId')} className={getName('vhsId')}>VHS Catalog ID</button></th>
-                <th><button type="button" onClick={() => requestSort('clamShell')} className={getName('clamShell')}>Clamshell Case?</button></th>
+              <th style={{textAlign: "center"}}>
+                <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('title')} className={getName('title')} style={{fontSize: "0.7rem"}}>Title</Button>
+                </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('movieYear')} className={getName('movieYear')} style={{fontSize: "0.7rem"}}>Movie Release Year</Button>
+                  </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsYear')} className={getName('vhsYear')} style={{fontSize: "0.7rem"}}>VHS release Year</Button>
+                  </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsCompany')} className={getName('vhsCompany')} style={{fontSize: "0.7rem"}}>VHS Company</Button>
+                  </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('genre')} className={getName('genre')} style={{fontSize: "0.7rem"}}>Genre</Button>
+                  </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsId')} className={getName('vhsId')} style={{fontSize: "0.7rem"}}>VHS Catalog ID</Button>
+                  </th>
+                <th style={{textAlign: "center"}}>
+                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('clamShell')} className={getName('clamShell')} style={{fontSize: "0.7rem"}}>Clamshell Case?</Button>
+                  </th>
                 <th></th>
               </tr>
             </thead> 
