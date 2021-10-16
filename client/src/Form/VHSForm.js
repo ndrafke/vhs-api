@@ -186,6 +186,7 @@ const clear = () => {
   <option value="Nelson Entertainment">Nelson Entertainment</option>
   <option value="Nettwerk">Nettwerk</option>
   <option value="New Line">New Line</option>
+  <option value="New World Video">New World Video</option>
   <option value="October Films">October Films</option>
   <option value="Orion">Orion</option>
   <option value="Paramount">Paramount</option>
