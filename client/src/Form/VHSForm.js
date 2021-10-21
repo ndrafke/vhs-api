@@ -162,6 +162,7 @@ const clear = () => {
   <option value="Dreamworks">Dreamworks</option>
   <option value="Elektra">Elektra</option>
   <option value="Embassy">Embassy</option>
+  <option value="Everrgreen Entertainment"></option>
   <option value="f.h.e.">f.h.e</option>
   <option value="Feature Films For Families">Feature Films For Families</option>
   <option value="Fox Lorber">Fox Lorber</option>
@@ -205,6 +206,7 @@ const clear = () => {
   <option value="Universal">Universal</option>
   <option value="Vestron">Vestron</option>
   <option value="Video Treasures">Video Treasures</option>
+  <option value="Vidmark">Vidmark</option>
   <option value="Walt Disney">Walt Disney</option>
   <option value="Warner Home Video">Warner Home Video</option>
   <option value="WorldVision">WorldVision</option>
