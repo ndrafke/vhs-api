@@ -154,6 +154,7 @@ const clear = () => {
   <option value="Anchor Bay">Anchor Bay</option>
   <option value="Artisan">Artisan</option>
   <option value="Avid">Avid</option>
+  <option value="Buena Vista">Buena Vista</option>
   <option value="Cannon">Cannon</option>
   <option value="Carolco">Carolco</option>
   <option value="CBS FOX">CBS FOX</option>
@@ -162,7 +163,7 @@ const clear = () => {
   <option value="Dreamworks">Dreamworks</option>
   <option value="Elektra">Elektra</option>
   <option value="Embassy">Embassy</option>
-  <option value="Everrgreen Entertainment"></option>
+  <option value="Evergreen Entertainment">Evergreen Entertainment</option>
   <option value="f.h.e.">f.h.e</option>
   <option value="Feature Films For Families">Feature Films For Families</option>
   <option value="Fox Lorber">Fox Lorber</option>
