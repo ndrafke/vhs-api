@@ -199,6 +199,7 @@ const clear = () => {
   <option value="Republic Pictures">Republic Pictures</option>
   <option value="Rhino">Rhino</option>
   <option value="Sherwood Productions">Sherwood Productions</option>
+  <option value="Something Weird Video">Something Weird Video</option>
   <option value="Starmaker">Starmaker</option>
   <option value="Touchstone">Touchstone</option>
   <option value="Triboro Entertainment">Triboro Entertainment</option>
