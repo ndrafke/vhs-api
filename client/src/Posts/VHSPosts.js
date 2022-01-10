@@ -28,30 +28,30 @@ const Posts = ({setCurrentId}) => {
         !data.length ? <CircularProgress /> : (
             <div>
             <h2 style={{textAlign: "center"}}>ENTRIES</h2>
-        <Container className="post-box">
-        <Table responsive striped bordered hover style={{fontSize: "0.9rem"}}>
+        <div className="post-box">
+        <table responsive striped bordered hover style={{fontSize: "0.9rem"}} className="sticky-table">
         <thead>
-              <tr>
-              <th style={{textAlign: "center"}}>
-                <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('title')} className={getName('title')} style={{fontSize: "0.7rem"}}>Title</Button>
+              <tr className="tr-black">
+              <th onClick={() => requestSort('title')} className={getName('title')}>
+                Title
                 </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('movieYear')} className={getName('movieYear')} style={{fontSize: "0.7rem"}}>Movie Release Year</Button>
+                <th onClick={() => requestSort('movieYear')} className={getName('movieYear')}>
+                  Movie Release Year
                   </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsYear')} className={getName('vhsYear')} style={{fontSize: "0.7rem"}}>VHS release Year</Button>
+                <th onClick={() => requestSort('vhsYear')} className={getName('vhsYear')}>
+                  VHS release Year
                   </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsCompany')} className={getName('vhsCompany')} style={{fontSize: "0.7rem"}}>VHS Company</Button>
+                <th onClick={() => requestSort('vhsCompany')} className={getName('vhsCompany')}>
+                  VHS Company
                   </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('genre')} className={getName('genre')} style={{fontSize: "0.7rem"}}>Genre</Button>
+                <th onClick={() => requestSort('genre')} className={getName('genre')}>
+                  Genre
                   </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('vhsId')} className={getName('vhsId')} style={{fontSize: "0.7rem"}}>VHS Catalog ID</Button>
+                <th onClick={() => requestSort('vhsId')} className={getName('vhsId')}>
+                  VHS Catalog ID
                   </th>
-                <th style={{textAlign: "center"}}>
-                  <Button type="button" variant="secondary" size="sm" onClick={() => requestSort('clamShell')} className={getName('clamShell')} style={{fontSize: "0.7rem"}}>Clamshell Case?</Button>
+                <th onClick={() => requestSort('clamShell')} className={getName('clamShell')}>
+                  Clamshell Case?
                   </th>
                 <th></th>
               </tr>
@@ -64,8 +64,8 @@ const Posts = ({setCurrentId}) => {
 
             ))}
             
-          </Table>      
-        </Container>
+          </table>      
+        </div>
         </div>
         )
     )

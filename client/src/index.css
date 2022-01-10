@@ -30,6 +30,10 @@
   align-items: center;
   justify-content: center;
 }
+.header {
+  position: sticky;
+  top: 0;
+}
 /*Actual box the list of posts sit in */
 .post-box {
   height: 60vh;
@@ -41,6 +45,30 @@
   flex-direction: column;
   font-size: 0.9rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 1;
+}
+.sticky-table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid whitesmoke;
+}
+th,
+td {
+  padding: 0.35rem;
+}
+.tr-black th {
+  background-color: black;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 /*Button on individual post: */
 .post-button {
